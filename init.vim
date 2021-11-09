@@ -24,6 +24,8 @@ call plug#end()
 "EOF
 
 
+let g:dashboard_default_executive ='telescope'
+
 
 lua require("which-key").setup {}
 
@@ -95,6 +97,7 @@ endfunction
 
 let randint = RandInt(2, 2)
 if randint == 1
+
 
 let g:dashboard_custom_header = [
 \ ' ███╗   ██╗ ███████╗ ██████╗  ██╗   ██╗ ██╗ ███╗   ███╗',
