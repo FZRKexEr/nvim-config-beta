@@ -2,6 +2,7 @@
 " 使用的插件 
 call plug#begin('~/.config/nvim/plugged')
 
+Plug 'thanthese/Tortoise-Typing'
 Plug 'Pocco81/AutoSave.nvim'
 Plug 'romgrk/barbar.nvim'
 Plug 'nvim-lua/plenary.nvim'
@@ -15,20 +16,14 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'kyazdani42/nvim-web-devicons' " for file icons
 Plug 'kyazdani42/nvim-tree.lua'
-"Plug 'glepnir/lspsaga.nvim'
 
 call plug#end()
 
-"lua << EOF
-"local saga = require 'lspsaga'
-"EOF
-
-
 let g:dashboard_default_executive ='telescope'
-
 
 lua require("which-key").setup {}
 
+lua require("nvim-treesitter.install").prefer_git = true
 
 let g:nord_bold = 1
 
